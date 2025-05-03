@@ -1,0 +1,528 @@
+*{
+    margin:0;
+    padding:0;
+    /* font-family: sans-serif; */
+    font-family: PP Mori;
+
+    box-sizing:border-box;
+    color:white
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+.purple{
+    width: 100%;
+    height: 100vh;
+    top:0;
+    z-index: 100;
+    position: fixed;
+    background: rgb(234, 197, 234);
+    display: none;
+    /* transition:4s linear; */
+    opacity: 0; /* Initial hidden state */
+    pointer-events: none;
+    animation: fadeIn 0.3s linear forwards;
+}
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+.mar{
+   display: flex;
+   flex-shrink: 0;
+   overflow-x:hidden ;
+   /* top: 50%; */
+   /* left: 50%; */
+   /* transform: translate(-50%, -50%); */
+   gap: 20px;
+   margin-top: 50vh;
+}
+.mar h1{
+    font-size: 120px;
+    -webkit-text-stroke: 2px black;
+    
+}
+.cursor{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: red;
+    position:fixed;
+    z-index: 4;
+    mix-blend-mode: difference;
+    /* transition: left linear 0.1s top linear;  */
+    transition:     background-image ease 0.5s;
+    background-position: center;
+    background-size: cover;
+
+}
+.main{
+    background: #0F0D0D;
+    /* cursor: none; */
+}
+.page1{
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+    z-index: 9;
+    padding-top: 12vw;
+}
+.nav{
+    height: 55px;
+    width: 100%;
+    position: fixed;
+    mix-blend-mode: difference;
+    z-index: 102;
+    /* background: red; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 30px;
+
+}
+.nav img{
+    height: 26px;
+}
+.nav-2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.nav .circle{
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    
+}
+.nav-2 h4{
+   font-size: 20px;
+   font-weight: 500;
+}
+
+.nav h4:nth-child(1){
+     border-bottom: 1.5px solid white;
+}
+
+.page1 h1{
+    font-size: 8vw;
+    font-weight: 300;
+    font-family: PP Mori;
+
+    margin-left: 6vw;
+}
+.page1 h2{
+    font-size: 8vw;
+    font-weight: 300;
+    font-family: PP Mori;
+    margin-left: 26vw;
+
+}
+.page1 video{
+    width: 60%;
+    /* margin-left: 20%; */
+    margin-top: 10vw;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%,0%);
+}
+.page2{
+    min-height: 80vh;
+    width: 100%;
+    padding: 100px 5vw;
+   border-bottom: 2px solid black;
+   position: relative;
+   z-index: 9;
+    
+}
+.page2 h1{
+    font-size: 7vw;
+    font-weight: 400;
+    color:#111
+}
+
+.page2-centre{
+    height: 60vh;
+    width: 100%;
+    /* background: red; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0vw 0vw;
+
+}
+.page2-left{
+    width: 38%;
+    /* background: blue; */
+    
+}
+
+.page2-left h2{
+    font-weight: 300;
+    font-size: 4vw;
+    color:#111;
+    line-height: 4vw;
+}
+
+
+.page2-right{
+    width: 25%;
+    /* background: blue; */
+}
+.page2-right p{
+    font-size:22px ;
+    color:#111;
+    line-height: 2vw;
+}
+.page2-right button{
+    width: 100%;
+    border-radius: 50px;
+    border: none;
+    background: #EDBFFF;
+    padding: 4px 0px;
+    color:#111;
+}
+.page3{
+   min-height: 150vh;
+   width: 100%;
+   position: relative;
+   padding-top: 100px;
+   border-bottom:3px solid black ;
+   position: relative;
+   z-index: 9;
+}
+.page3 h1{
+    color:#111;
+    font-size: 6.8vw;
+    font-weight: 300;
+    margin-left: 100px;
+}
+.page3-part1{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 0px 20px;
+}
+.page3-part1 img{
+    height: 599px;
+    margin-top: 160px;
+}
+.page3-part2{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding-right:270px ;
+    padding-left: 100px;
+    padding-top:250px;
+    padding-bottom:350px;
+
+}
+.page3-part2 img{
+    width: 409px;
+    height: 606px;
+    margin-top: 160px;
+}
+.page3-part2 video{
+    width: 30vw;
+    height: 40vw;
+    object-fit: cover;
+ 
+}
+.page4{
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+    position: relative;
+    z-index: 9;
+    padding: 100px 100px;
+}
+.page4 .elem{
+    /* background: salmon; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-bottom: 27px;
+
+}
+.elem h1{
+    font-size: 7.3vw;
+    transition: 0.5s all ease-out ;
+    font-weight: 400;
+}
+.elem .txt{
+    /* background: aqua; */
+    height: 120px;
+    overflow: hidden;
+    z-index: 33;
+}
+.elem:hover h1{
+    transform: translateY(-100%);
+    color:rgb(228, 188, 183);
+}
+.elem:hover img{
+    /* transform: translateY(-100%);
+     */
+     opacity: 1;
+    transform: translateY(0%) rotate(0deg);
+
+}
+.elem img{
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s all ease-out ;
+    transform: translateY(10%) rotate(3deg);
+}
+.elem img:nth-child(1){
+    left: 2%;
+}
+.elem img:nth-child(3){
+    right: 10%;
+}
+.page5{
+    min-height: 100vh;
+    width: 100%;
+    /* position: relative; */
+    /* background: red; */
+    position: relative;
+    z-index: 9;
+    padding: 140px 100px;
+}
+footer{
+    height: 90vh;
+    width: 100%;
+    background: aqua;
+}
+
+.page5 h1{
+    font-size: 4vw;
+    text-transform: uppercase;
+    font-weight: 200;
+}
+.box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+    padding: 0px 20px;
+    border-top: 1px solid #DADADA;
+}
+.box:nth-last-child(1){
+    border-bottom: 1px solid #dadada;
+}
+footer{
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+    .page1 h1, .page1 h2 {
+        font-size: 6vw;
+        margin-left: 4vw;
+    }
+    .page2 h1 {
+        font-size: 6vw;
+    }
+    .page2-left h2 {
+        font-size: 3vw;
+        line-height: 3.5vw;
+    }
+    .page2-right p {
+        font-size: 18px;
+    }
+    .page3 h1 {
+        font-size: 5.5vw;
+    }
+    .page3-part1 img, .page3-part2 img {
+        height: 400px;
+        width: 60%;
+        margin-top: 100px;
+    }
+    .page3-part2 video {
+        width: 40vw;
+        height: 30vw;
+    }
+    .elem h1 {
+        font-size: 6vw;
+    }
+    .page5 h1 {
+        font-size: 3.5vw;
+    }
+    .box {
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .nav {
+        padding: 0 15px;
+    }
+    .nav img {
+        height: 22px;
+    }
+    .nav-2 h4 {
+        font-size: 16px;
+    }
+    .cursor {
+        width: 20px;
+        height: 20px;
+    }
+    .mar h1 {
+        font-size: 90px;
+    }
+    .page1 h1, .page1 h2 {
+        font-size: 7vw;
+    }
+    .page2-left h2 {
+        font-size: 2.5vw;
+        line-height: 3vw;
+    }
+    .page3-part1 img, .page3-part2 img {
+        width: 80%;
+        margin-top: 50px;
+    }
+    .page3-part2 video {
+        width: 60%;
+    }
+    .page5 h1 {
+        font-size: 4vw;
+    }
+    .elem h1 {
+        font-size: 5vw;
+    }
+}
+
+@media (max-width: 480px) {
+    .nav {
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+    }
+    .nav img {
+        height: 18px;
+    }
+    .nav-2 {
+        flex-direction: column;
+        gap: 5px;
+    }
+    .page1 h1, .page1 h2 {
+        font-size: 9vw;
+        margin-left: 3vw;
+    }
+    .page2 h1 {
+        font-size: 5.5vw;
+    }
+    .page2-left h2 {
+        font-size: 4vw;
+        line-height: 3vw;
+    }
+    .page2-right p {
+        font-size: 16px;
+    }
+    .page3 h1 {
+        font-size: 5vw;
+    }
+    .page3-part1 img, .page3-part2 img {
+        width: 100%;
+        margin-top: 0;
+    }
+    .page3-part2 video {
+        width: 80%;
+        height: auto;
+    }
+    .elem h1 {
+        font-size: 4vw;
+    }
+    .page5 h1 {
+        font-size: 3.5vw;
+    }
+}
